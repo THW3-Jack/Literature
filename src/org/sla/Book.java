@@ -9,4 +9,11 @@ public class Book {
     private String language;
     private String genre;
 
+    public Book(String title, String author, int sales, int publish, String language, String genre){
+
+
+    }
+
+
+
 }
