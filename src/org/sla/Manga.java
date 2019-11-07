@@ -12,7 +12,7 @@ private String publisher;
 private String demographic;
 private int volumes;
 
-   public Manga(String title, String author, int sales, int publish, String language, String genre, String myPublisher, String myDemographic, int myVolumes) {
+   public Manga(String title, String author, String sales, int publish, String language, String genre, String myPublisher, String myDemographic, int myVolumes) {
         super(title, author, sales, publish, language, genre);
         publisher = myPublisher;
         demographic = myDemographic;
