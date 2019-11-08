@@ -11,11 +11,11 @@ public class Book {
     private String title;
     private String author;
     private String sales;
-    private int publish;
+    private String publish;
     private String language;
     private String genre;
 
-    public Book(String title, String author, String language, int publish, String sales, String genre){
+    public Book(String title, String author, String language, String publish, String sales, String genre){
         this.author = author;
         this.genre = genre;
         this.language = language;
@@ -48,7 +48,7 @@ public class Book {
                 String title = lineScanner.next();
                 String author = lineScanner.next();
                 String language = lineScanner.next();
-                int publish = lineScanner.nextInt();
+                String publish = lineScanner.next();
                 String sales = lineScanner.next();
                 String genre = lineScanner.next();
                 // Some lines have certified sales value, then claimed sales value
@@ -103,11 +103,11 @@ public class Book {
         this.sales = sales;
     }
 
-    public int getPublish() {
+    public String getPublish() {
         return publish;
     }
 
-    public void setPublish(int publish) {
+    public void setPublish(String publish) {
         this.publish = publish;
     }
 
@@ -128,7 +128,7 @@ public class Book {
     }
 
     public void describe() {
-        System.out.println("Book: " + title);
+        System.out.println(title + " is a " + genre + " book " + " by: " + author + ". Writen in " + language + " and it was first published in " + publish + " and sold a total of" + sales + " copies.");
 
 
     }
