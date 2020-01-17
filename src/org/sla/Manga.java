@@ -92,7 +92,7 @@ private int volumes;
     }
 
     public void describe() {
-System.out.println(title + " is a " + genre + " book " + " by: " + author + ". Writen in " + language + " and it was first published in " + publish + " and sold a total of" + sales + " copies.");
+System.out.println(this.getTitle() + " is a " + this.getGenre() + " book " + " by: " + this.getAuthor() + ". Writen in " + this.getLanguage() + " and it was first published in " + this.getPublish() + " and sold a total of" + this.getSales() + " copies.");
 
     }
 }
